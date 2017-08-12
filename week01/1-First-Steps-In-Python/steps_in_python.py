@@ -90,8 +90,8 @@ def fact_digits(n):
     pass
     # sum = 0
     # while n:
-        factorial = n % 10
-        factorialSum = 0
+    #     factorial = n % 10
+    #     factorialSum = 0
         #
         # JS
         # function sFact(num) {
