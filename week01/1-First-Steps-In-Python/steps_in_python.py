@@ -74,12 +74,39 @@ count_constants('Theistareykjarbunga')
 
 # Check if a given number is prime
 def prime_number(number):
-    pass
+    if number < 2:
+        return False
 
+    for x in range(2, number):
+        if (number % x == 0):
+            return False
+
+    return True
+
+prime_number(8)
 
 # Sum of the factorials of the digits in the number
 def fact_digits(n):
     pass
+    # sum = 0
+    # while n:
+        factorial = n % 10
+        factorialSum = 0
+        #
+        # JS
+        # function sFact(num) {
+        #     var rval=1;
+        #     for (var i = 2; i <= num; i++)
+        #         rval = rval * i;
+        #     return rval;
+        #
+        # }
+        #
+        # n //= 10
+    #
+    # print(sum)
+#
+# fact_digits(4)
 
 
 # fibonacci sequince
