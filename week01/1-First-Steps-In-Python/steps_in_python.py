@@ -85,28 +85,24 @@ def prime_number(number):
 
 prime_number(8)
 
+
 # Sum of the factorials of the digits in the number
 def fact_digits(n):
-    pass
-    # sum = 0
-    # while n:
-    #     factorial = n % 10
-    #     factorialSum = 0
-        #
-        # JS
-        # function sFact(num) {
-        #     var rval=1;
-        #     for (var i = 2; i <= num; i++)
-        #         rval = rval * i;
-        #     return rval;
-        #
-        # }
-        #
-        # n //= 10
-    #
-    # print(sum)
-#
-# fact_digits(4)
+    sum = 0
+    while n:
+        factorial = n % 10
+        factorialSum = 1
+
+        for x in range(2, factorial + 1):
+            factorialSum = factorialSum * x
+
+        sum += factorialSum
+
+        n //= 10
+
+    print(sum)
+
+fact_digits(111)
 
 
 # fibonacci sequince
